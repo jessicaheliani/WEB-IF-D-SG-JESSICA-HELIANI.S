@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Jessica Heliani.S</title>
+  <style>
+    body {
+        background-image: url('https://i.pinimg.com/736x/0b/b9/78/0bb978c0b39cc065fa36219511717e0d.jpg');
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      background-color: #372f84; 
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+      width: 300px;
+      color: white;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="tel"],
+    input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      border: none;
+      border-bottom: 2px solid white;
+      background: transparent;
+      color: white;
+    }
+
+    input::placeholder {
+      color: #f0f0f0;
+    }
+
+    .radio-group {
+      margin: 8px 0;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .radio-group label {
+      margin-right: 10px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      background-color: white;
+      color: green;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .back-link {
+      margin-top: 15px;
+      text-align: center;
+      display: block;
+      color: white;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Silahkan Isi Data</h2>
+    <form>
+      <input type="text" placeholder="First name" required>
+      <input type="text" placeholder="Middle name">
+      <input type="text" placeholder="Last name" required>
+      <input type="date" placeholder="Tanggal Lahir" required>
+
+      <div class="radio-group">
+        <label>Jenis Kelamin:</label>
+        <label><input type="radio" name="gender" value="pria"> Pria</label>
+        <label><input type="radio" name="gender" value="wanita"> Wanita</label>
+      </div>
+
+      <input type="text" placeholder="Tempat Tinggal">
+      <input type="email" placeholder="Email" required>
+      <input type="tel" placeholder="Phone">
+      <input type="password" placeholder="Password" required>
+
+      <button type="submit">REGISTER</button>
+      <a href="#" class="back-link">Kembali</a>
+    </form>
+  </div>
+</body>
+</html>
